@@ -1,0 +1,273 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.status-box {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.status-connected,
+.status-disconnected {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.status-dot.green {
+  background: #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.status-dot.red {
+  background: #ff4444;
+  box-shadow: 0 0 10px #ff4444;
+}
+
+.status-connected p,
+.status-disconnected p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.error {
+  color: #ff6b6b !important;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00d4ff, #0099cc);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00e5ff, #00aadd);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #00ff88, #00cc6a);
+  color: #000;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #00ff99, #00dd7b);
+}
+
+.counter-display {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.counter-value {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hint {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00d4ff;
+}
+
+.input::placeholder {
+  color: #666;
+}
+
+.users-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.user-item strong {
+  color: #00d4ff;
+}
+
+.user-item span {
+  color: #888;
+}
+
+.task-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(123, 44, 191, 0.2), rgba(0, 212, 255, 0.1));
+  border: 1px solid rgba(123, 44, 191, 0.3);
+}
+
+.task-content {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.task-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.task-content li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.task-content code {
+  background: rgba(0, 212, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #00d4ff;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  color: #666;
+}
+
+.footer small {
+  color: #444;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .counter-value {
+    font-size: 3rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
