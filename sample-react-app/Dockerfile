@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV VITE_API_URL=http://24.144.94.210:3000
+ENV VITE_API_URL=https://api-shyam.zorai.cloud
 RUN npm run build
 
 FROM nginx:alpine
